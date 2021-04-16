@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doniyor_Coder</title>
+    <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16" />
     <style>
       html {
         box-sizing: border-box;
+        scroll-behavior: smooth;
       }
       body {
         margin: 0;
@@ -15,6 +17,9 @@
         font-family: monospace;
         text-align: center;
         font-size: 16px;
+      }
+      section img {
+        margin-bottom: 20px;
       }
       img {
         display: block;
@@ -45,13 +50,22 @@
       }
       a:hover {
         text-decoration: underline;
+        font-weight: 700;
       }
       hr {
-        width: 80%;
+        margin-top: 20px;
+        width: 60%;
         height: 2px;
         background: #979797;
       }
+      h1 {
+        line-height: 40px;
+      }
+      i {
+        color: rgba(126, 252, 0, 0.808);
+      }
       footer {
+        padding: 20px 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -71,19 +85,46 @@
             style="display: block"
         /></a>
         <ul>
-          <li style="margin-left: auto"><a href="">About me</a></li>
-          <li style="margin-left: 30px"><a href="">My projects</a></li>
-          <li style="margin-left: 30px"><a href="">Contact me</a></li>
+          <li style="margin-left: auto"><a href="#aboutme">About me</a></li>
+          <li style="margin-left: 30px">
+            <a href="#myproject">My projects</a>
+          </li>
+          <li style="margin-left: 30px"><a href="#contact">Contact me</a></li>
         </ul>
       </header>
       <main>
-        <section>
+        <section
+          id="aboutme"
+          style="text-align: center; margin-top: 200px; margin-bottom: 200px"
+        >
+          <h1>
+            Hello everyone! <br />
+            My name is <i>Doniyorbek</i> <br />
+            I'm <i>Frontend developer</i> from Uzbekistan
+          </h1>
+          <h2>And this is my portfolio</h2>
+        </section>
+        <section id="myproject">
+          <h2>My projects</h2>
           <ul style="flex-direction: column; align-items: center">
+            <li>
+              <h3>Portfolio</h3>
+              <date>16/04/2021</date>
+              <img
+                src="images/portfolio.png"
+                width="666"
+                height="444"
+                alt="portfolio"
+              />
+              <a href="#" target="_blank">Netlify</a>
+              <a href="https://github.com/Doniyorbek-Coder/portfolio">GitHub</a>
+            </li>
+            <hr />
             <li>
               <h3>Zendit</h3>
               <date>13/04/2021</date>
               <img
-                src="images/zendit.jpg"
+                src="images/zendit.png"
                 width="666"
                 height="444"
                 alt="zendit"
@@ -100,7 +141,7 @@
               <h3>Payme</h3>
               <date>11/04/2021</date>
               <img
-                src="images/payme.jpg"
+                src="images/payme.png"
                 width="666"
                 height="444"
                 alt="payme"
@@ -118,7 +159,7 @@
             <li>
               <h3>Pixer</h3>
               <date>09/04/2021</date>
-              <img src="images/pixer.jpg" width="666" height="444" alt="" />
+              <img src="images/pixer.png" width="666" height="444" alt="" />
               <a href="https://pixer-challange.netlify.app/" target="_blank"
                 >Netlify</a
               >
@@ -133,7 +174,7 @@
               <h3>Rest-countries</h3>
               <date>07/04/2021</date>
               <img
-                src="images/rest-countries.jpg"
+                src="images/rest-countries.png"
                 width="666"
                 height="444"
                 alt=""
@@ -151,56 +192,174 @@
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Namanganliklar24</h3>
+              <date>18/03/2021</date>
+              <img
+                src="images/namanganliklar24.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                href="https://namanganliklar24challange.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/namanganliklar24"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Fylo data</h3>
+              <date>16/03/2021</date>
+              <img src="images/fylo.png" width="666" height="444" alt="" />
+              <a
+                href="https://fylo-data-storage-component-page.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/Fylo-data-storage-component"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Social-proof</h3>
+              <date>10/03/2021</date>
+              <img
+                src="images/social-proof.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                href="https://social-proof-landing-page.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/social-proof-section-master"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Transfers-page</h3>
+              <date>07/03/2021</date>
+              <img src="images/transfer.png" width="666" height="444" alt="" />
+              <a href="https://transfers-page.netlify.app/" target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/money-transfers-page"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Messenger-card</h3>
+              <date>07/03/2021</date>
+              <img src="images/messenger.png" width="666" height="444" alt="" />
+              <a href="https://loop1-step4-page.netlify.app/" target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/messenger-card-page"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
             <hr />
             <li>
-              <h3></h3>
-              <date></date>
-              <img src="images/" width="666" height="444" alt="" />
-              <a href="" target="_blank">Netlify</a>
-              <a href="" target="_blank">GitHub</a>
+              <h3>Vibrator-phone</h3>
+              <date>05/03/2021</date>
+              <img src="images/vibrator.png" width="666" height="444" alt="" />
+              <a href="https://vibrator-phone.netlify.app/" target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/vibrator"
+                target="_blank"
+                >GitHub</a
+              >
             </li>
+            <hr />
+            <li>
+              <h3>Crowdfunding-page</h3>
+              <date>01/03/2021</date>
+              <img
+                src="images/crowdfunding.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a href="https://crowdfunding-page.netlify.app/" target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/Crowdfunding-product-page"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <hr />
+            <li>
+              <h3>Four-card</h3>
+              <date>26/02/2021</date>
+              <img src="images/four.png" width="666" height="444" alt="" />
+              <a
+                href="https://four-card-feature-sectionpage.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/four-card-feature-section-master"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <hr />
+            <li>
+              <h3>Profile-card</h3>
+              <date>25/02/2021</date>
+              <img src="images/profile.png" width="666" height="444" alt="" />
+              <a href="https://profile-card-page.netlify.app/" target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/Profile-card-component"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <hr />
+            <li>
+              <h3>Insure</h3>
+              <date>14/02/2021</date>
+              <img src="images/insure.png" width="666" height="444" alt="" />
+              <a
+                href="https://insure-landing-pages.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
+              <a
+                href="https://github.com/Doniyorbek-Coder/insure-landing-page-for-exam"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <hr />
           </ul>
         </section>
       </main>
-      <footer>
+      <footer id="contact">
         <a><img src="images/dc.jpg" width="58" height="38.7" alt="" /></a>
         <ul>
           <li style="margin-left: auto">
@@ -211,17 +370,16 @@
               >GitHub</a
             >
           </li>
+
           <li style="margin-left: 30px">
-            <a
-              href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl"
-              target="_blank"
-              >Gmail</a
-            >
-          </li>
-          <li style="margin-left: 30px">
-            <span> Tel: +998 90 917 17 33 </span>
+            <a href="tel:+998909171733"> Contact</a>
           </li>
         </ul>
+        <div>
+          <a href="mailto:asqaraliyev1559099@gmail.com" target="_blank"
+            >Gmail</a
+          >
+        </div>
       </footer>
     </div>
   </body>
