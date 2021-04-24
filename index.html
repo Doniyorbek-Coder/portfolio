@@ -6,151 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doniyor_Coder</title>
     <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16" />
-    <style>
-      html {
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: monospace;
-        text-align: center;
-        font-size: 16px;
-      }
-      section img {
-        margin-bottom: 20px;
-      }
-      img {
-        display: block;
-      }
-      .container {
-        max-width: 1200px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 20px 0;
-        align-items: center;
-      }
-      ul {
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-      }
-      a {
-        text-decoration: none;
-        color: #191919;
-        transition: all 0.3s;
-      }
-      a:hover {
-        text-decoration: underline;
-        font-weight: 700;
-      }
-      hr {
-        margin-top: 20px;
-        width: 100%;
-        height: 2px;
-        background: #979797;
-      }
-      h1 {
-        line-height: 40px;
-      }
-      i {
-        color: rgba(126, 252, 0, 0.808);
-      }
-      footer {
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-    </style>
+    <link rel="stylesheet" href="css/normailize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
-    <div class="container">
-      <header>
-        <a
+    <header class="site-header">
+      <div class="site-header__container container">
+        <a class="site-header__logo"
           ><img
+            class="site-header__logo-img"
             src="images/dc.jpg"
             width="58"
             height="39"
-            alt=""
-            style="display: block"
+            alt="logo"
         /></a>
-        <ul>
-          <li style="margin-left: auto"><a href="#aboutme">About me</a></li>
-          <li style="margin-left: 30px">
-            <a href="#myproject">My projects</a>
+        <ul class="site-header__list">
+          <li class="site-header__item">
+            <a class="site-header__link" href="#aboutme">About me</a>
           </li>
-          <li style="margin-left: 30px"><a href="#contact">Contact me</a></li>
+          <li class="site-header__item">
+            <a class="site-header__link" href="#myproject">My projects</a>
+          </li>
+          <li class="site-header__item">
+            <a class="site-header__link" href="#contact">Contact me</a>
+          </li>
         </ul>
-      </header>
-      <main>
-        <section
-          id="aboutme"
-          style="text-align: center; margin-top: 200px; margin-bottom: 200px"
-        >
-          <h1>
-            Hello everyone! <br />
-            My name is <i>Doniyorbek</i> <br />
-            I'm <i>Frontend developer</i> from Uzbekistan
+      </div>
+    </header>
+
+    <main class="site-content">
+      <section class="about" id="aboutme">
+        <div class="about__container container">
+          <h1 class="about__title">
+            Hello everyone! My&nbsp;name is&nbsp;<i class="about__title-green"
+              >Doniyorbek</i
+            >
+            I'm
+            <i class="about__title-green">Frontend developer</i>
+            from Uzbekistan
           </h1>
-          <h2>And this is my portfolio</h2>
-        </section>
-        <section id="myproject">
-          <h2>My projects</h2>
-          <ul style="flex-direction: column; align-items: center">
-            <li>
-              <h3>Portfolio</h3>
-              <div class="date">16/04/2021</div>
+          <p class="about__text">And this is my portfolio</p>
+        </div>
+      </section>
+
+      <section class="project" id="myproject">
+        <div class="project__container container">
+          <h2 class="project__title">My projects</h2>
+          <ul class="project__list">
+            <li class="project__item">
+              <h3 class="project__list-title">Portfolio</h3>
+              <div class="project__date">16/04/2021</div>
               <img
+                class="project__img"
                 src="images/portfolio.png"
                 width="666"
                 height="444"
                 alt="portfolio"
               />
-              <a href="#" target="_blank">Netlify</a>
-              <a href="https://github.com/Doniyorbek-Coder/portfolio">GitHub</a>
+              <a class="project__link" href="#" target="_blank">Netlify</a>
+              <a
+                class="project__link"
+                href="https://github.com/Doniyorbek-Coder/portfolio"
+                >GitHub</a
+              >
               <hr />
             </li>
-            <li>
-              <h3>Zendit</h3>
-              <div class="date">13/04/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Zendit</h3>
+              <div class="project__date">13/04/2021</div>
               <img
+                class="project__img"
                 src="images/zendit.png"
                 width="666"
                 height="444"
                 alt="zendit"
               />
-              <a href="https://package-delivery.netlify.app/" target="_blank"
+              <a
+                class="project__link"
+                href="https://package-delivery.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
-              <a href="https://github.com/Doniyorbek-Coder/Package-Delivery"
+              <a
+                class="project__link"
+                href="https://github.com/Doniyorbek-Coder/Package-Delivery"
                 >GitHub</a
               >
               <hr />
             </li>
 
-            <li>
-              <h3>Payme</h3>
-              <div class="date">11/04/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Payme</h3>
+              <div class="project__date">11/04/2021</div>
               <img
+                class="project__img"
                 src="images/payme.png"
                 width="666"
                 height="444"
                 alt="payme"
               />
-              <a href="https://payme-clone.netlify.app/" target="_blank"
+              <a
+                class="project__link"
+                href="https://payme-clone.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/Payme-clone"
                 target="_blank"
                 >GitHub</a
@@ -158,14 +121,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Pixer</h3>
-              <div class="date">09/04/2021</div>
-              <img src="images/pixer.png" width="666" height="444" alt="" />
-              <a href="https://pixer-challange.netlify.app/" target="_blank"
+            <li class="project__item">
+              <h3 class="project__title">Pixer</h3>
+              <div class="project__date">09/04/2021</div>
+              <img
+                class="project__img"
+                src="images/pixer.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                class="project__link"
+                href="https://pixer-challange.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/pixer"
                 target="_blank"
                 >GitHub</a
@@ -173,21 +146,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Rest-countries</h3>
-              <div class="date">07/04/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Rest-countries</h3>
+              <div class="project__date">07/04/2021</div>
               <img
+                class="project__img"
                 src="images/rest-countries.png"
                 width="666"
                 height="444"
                 alt=""
               />
               <a
+                class="project__link"
                 href="https://rest-countries-pages.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/rest-countries"
                 target="_blank"
                 >GitHub</a
@@ -195,21 +171,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Namanganliklar24</h3>
-              <div class="date">18/03/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Namanganliklar24</h3>
+              <div class="project__date">18/03/2021</div>
               <img
+                class="project__img"
                 src="images/namanganliklar24.png"
                 width="666"
                 height="444"
                 alt=""
               />
               <a
+                class="project__link"
                 href="https://namanganliklar24challange.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/namanganliklar24"
                 target="_blank"
                 >GitHub</a
@@ -217,16 +196,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Fylo data</h3>
-              <div class="date">16/03/2021</div>
-              <img src="images/fylo.png" width="666" height="444" alt="" />
+            <li class="project__item">
+              <h3 class="project__title">Fylo data</h3>
+              <div class="project__date">16/03/2021</div>
+              <img
+                class="project__img"
+                src="images/fylo.png"
+                width="666"
+                height="444"
+                alt=""
+              />
               <a
+                class="project__link"
                 href="https://fylo-data-storage-component-page.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/Fylo-data-storage-component"
                 target="_blank"
                 >GitHub</a
@@ -234,21 +221,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Social-proof</h3>
-              <div class="date">10/03/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Social-proof</h3>
+              <div class="project__date">10/03/2021</div>
               <img
+                class="project__img"
                 src="images/social-proof.png"
                 width="666"
                 height="444"
                 alt=""
               />
               <a
+                class="project__link"
                 href="https://social-proof-landing-page.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/social-proof-section-master"
                 target="_blank"
                 >GitHub</a
@@ -256,14 +246,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Transfers-page</h3>
-              <div class="date">07/03/2021</div>
-              <img src="images/transfer.png" width="666" height="444" alt="" />
-              <a href="https://transfers-page.netlify.app/" target="_blank"
+            <li class="project__item">
+              <h3 class="project__title">Transfers-page</h3>
+              <div class="project__date">07/03/2021</div>
+              <img
+                class="project__img"
+                src="images/transfer.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                class="project__link"
+                href="https://transfers-page.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/money-transfers-page"
                 target="_blank"
                 >GitHub</a
@@ -271,14 +271,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Messenger-card</h3>
-              <div class="date">07/03/2021</div>
-              <img src="images/messenger.png" width="666" height="444" alt="" />
-              <a href="https://loop1-step4-page.netlify.app/" target="_blank"
+            <li class="project__item">
+              <h3 class="project__title">Messenger-card</h3>
+              <div class="project__date">07/03/2021</div>
+              <img
+                class="project__img"
+                src="images/messenger.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                class="project__link"
+                href="https://loop1-step4-page.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/messenger-card-page"
                 target="_blank"
                 >GitHub</a
@@ -286,14 +296,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Vibrator-phone</h3>
-              <div class="date">05/03/2021</div>
-              <img src="images/vibrator.png" width="666" height="444" alt="" />
-              <a href="https://vibrator-phone.netlify.app/" target="_blank"
+            <li class="project__item">
+              <h3 class="project__title">Vibrator-phone</h3>
+              <div class="project__date">05/03/2021</div>
+              <img
+                class="project__img"
+                src="images/vibrator.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                class="project__link"
+                href="https://vibrator-phone.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/vibrator"
                 target="_blank"
                 >GitHub</a
@@ -301,19 +321,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Crowdfunding-page</h3>
-              <div class="date">01/03/2021</div>
+            <li class="project__item">
+              <h3 class="project__title">Crowdfunding-page</h3>
+              <div class="project__date">01/03/2021</div>
               <img
+                class="project__img"
                 src="images/crowdfunding.png"
                 width="666"
                 height="444"
                 alt=""
               />
-              <a href="https://crowdfunding-page.netlify.app/" target="_blank"
+              <a
+                class="project__link"
+                href="https://crowdfunding-page.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/Crowdfunding-product-page"
                 target="_blank"
                 >GitHub</a
@@ -321,16 +346,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Four-card</h3>
-              <div class="date">26/02/2021</div>
-              <img src="images/four.png" width="666" height="444" alt="" />
+            <li class="project__item">
+              <h3 class="project__title">Four-card</h3>
+              <div class="project__date">26/02/2021</div>
+              <img
+                class="project__img"
+                src="images/four.png"
+                width="666"
+                height="444"
+                alt=""
+              />
               <a
+                class="project__link"
                 href="https://four-card-feature-sectionpage.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/four-card-feature-section-master"
                 target="_blank"
                 >GitHub</a
@@ -338,14 +371,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Profile-card</h3>
-              <div class="date">25/02/2021</div>
-              <img src="images/profile.png" width="666" height="444" alt="" />
-              <a href="https://profile-card-page.netlify.app/" target="_blank"
+            <li class="project__item">
+              <h3 class="project__title">Profile-card</h3>
+              <div class="project__date">25/02/2021</div>
+              <img
+                class="project__img"
+                src="images/profile.png"
+                width="666"
+                height="444"
+                alt=""
+              />
+              <a
+                class="project__link"
+                href="https://profile-card-page.netlify.app/"
+                target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/Profile-card-component"
                 target="_blank"
                 >GitHub</a
@@ -353,16 +396,24 @@
               <hr />
             </li>
 
-            <li>
-              <h3>Insure</h3>
-              <div class="date">14/02/2021</div>
-              <img src="images/insure.png" width="666" height="444" alt="" />
+            <li class="project__item">
+              <h3 class="project__title">Insure</h3>
+              <div class="project__date">14/02/2021</div>
+              <img
+                class="project__img"
+                src="images/insure.png"
+                width="666"
+                height="444"
+                alt=""
+              />
               <a
+                class="project__link"
                 href="https://insure-landing-pages.netlify.app/"
                 target="_blank"
                 >Netlify</a
               >
               <a
+                class="project__link"
                 href="https://github.com/Doniyorbek-Coder/insure-landing-page-for-exam"
                 target="_blank"
                 >GitHub</a
@@ -370,30 +421,47 @@
               <hr />
             </li>
           </ul>
-        </section>
-      </main>
-      <footer id="contact">
-        <a><img src="images/dc.jpg" width="58" height="39" alt="" /></a>
-        <ul>
-          <li style="margin-left: auto">
-            <a href="https://t.me/d0n1y0r_c0der">Telegram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="site-footer__container container">
+        <a class="site-footer__logo"
+          ><img
+            class="site-footer__logo-img"
+            src="images/dc.jpg"
+            width="58"
+            height="39"
+            alt="logo"
+        /></a>
+        <ul class="site-footer__list">
+          <li class="site-footer__item" style="margin-left: auto">
+            <a class="site-footer__link" href="https://t.me/d0n1y0r_c0der"
+              >Telegram</a
+            >
           </li>
-          <li style="margin-left: 30px">
-            <a href="https://github.com/Doniyorbek-Coder" target="_blank"
+          <li class="site-footer__item" style="margin-left: 30px">
+            <a
+              class="site-footer__link"
+              href="https://github.com/Doniyorbek-Coder"
+              target="_blank"
               >GitHub</a
             >
           </li>
-
-          <li style="margin-left: 30px">
-            <a href="tel:+998909171733"> Contact</a>
+          <li class="site-footer__item" style="margin-left: 30px">
+            <a class="site-footer__link" href="tel:+998909171733"> Contact</a>
           </li>
         </ul>
         <div>
-          <a href="mailto:asqaraliyev1559099@gmail.com" target="_blank"
+          <a
+            class="site-footer__link"
+            href="mailto:asqaraliyev1559099@gmail.com"
+            target="_blank"
             >Gmail</a
           >
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
