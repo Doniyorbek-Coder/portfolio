@@ -10,4 +10,3 @@
 
 # Deploy
 
-https://jaxongir-abdusalomov.netlify.app/
