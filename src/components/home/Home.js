@@ -24,8 +24,8 @@ class Home extends Component {
               Technology in 2018 and my first step in programming started here
               and I am still programming, now I am a Full Stack Programmer, in
               2020 I learned programming in PDP, now HTML, CSS, JS, I learned to
-              React JS, J and other technologies, I created small and big
-              projects! You can see my projects at
+              React JS , IOS development and other technologies, I created small
+              and big projects! You can see my projects at
               https://github.com/doniyorbek-coder/. My goal is to work in large,
               friendly teams and to present myself as a personal firm in the
               future.
