@@ -17,7 +17,7 @@ class Home extends Component {
         <div className="HomePage">
           <header className="hero">
             <h1 className="hero-text">
-              Hi, I am <span>Doiyorbek Asqaraliyev</span>
+              Hi, I am <span>Doniyorbek Asqaraliyev</span>
             </h1>
             <p className="h-sub-text">
               I was admitted to Tashkent University of Information and
